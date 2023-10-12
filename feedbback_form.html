@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Форма обратной связи</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link rel="stylesheet" href="feedback_form.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <h1> форма обратной связи</h1>
+        </div>
+
+        <div class="row input-container">
+            <div class="col-xs-12">
+                <div class="styled-input wide">
+                    <input type="text" required />
+                    <label>ФИО</label>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-sm-12">
+                <div class="styled-input">
+                    <input type="text" required />
+                    <label>Email</label>
+                </div>
+            </div>
+
+            <h4>Как вы узнали о нас?</h4>
+            <div class="radio">
+                <label><input type="radio" name="where">Соц. сети</label>
+                <label><input type="radio" name="where">Знакомые</label>
+                <label><input type="radio" name="where">Реклама</label>
+            </div>
+
+            <h4>Выберете тип обращения</h4>
+
+            <select>
+                <option value="1">Жалоба</option>
+                <option value="2">Обращение</option>
+            </select>
+
+            <div class="col-xs-12">
+                <div class="styled-input wide">
+                    <textarea required></textarea>
+                    <label>Текст сообщения</label>
+                </div>
+
+                <div><input type="file"></div>
+
+            </div>
+            <div class="personal-data">
+                <label><input type="checkbox">Даю соглашение на обработку персональных данных</label>
+            </div>
+            <div class="col-xs-12">
+                <div class="btn-lrg submit-btn">Отправить</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
